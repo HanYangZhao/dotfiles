@@ -10,13 +10,6 @@ echo "**********************Install python tools stack...***********************
 echo "**************************************************************************"
 sudo apt-get install -y build-essential python-dev python-setuptools python-pip python3-dev python3-pip git
 
-echo "**************************************************************************"
-echo "*************************Install NeoVim...********************************"
-echo "**************************************************************************"
-add-apt-repository -y ppa:neovim-ppa/unstable
-apt-get update
-apt-get -y install neovim
-pip3 install neovim
 
 echo "**************************************************************************"
 echo "***********************Install powerline...*******************************"
