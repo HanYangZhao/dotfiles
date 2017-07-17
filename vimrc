@@ -19,7 +19,6 @@
 autocmd! bufwritepost $MYVIMRC source $MYVIMRC
 
 call plug#begin('~/.vim/plugged')
-Plug 'Shougo/neocomplete.vim'
 
 " Essential
 Plug 'morhetz/gruvbox'
@@ -43,7 +42,7 @@ Plug 'benmills/vimux'
 
 Plug 'Shougo/neosnippet.vim'
 Plug 'Shougo/neosnippet-snippets'
-
+Plug 'Shougo/neocomplete'
 Plug 'mhinz/vim-sayonara', { 'on': 'Sayonara' }
 Plug 'EinfachToll/DidYouMean'
 Plug 'mhinz/vim-startify'
@@ -316,6 +315,7 @@ let c_no_curly_error=1
 " ---
 autocmd FileType vim setlocal noexpandtab shiftwidth=4 tabstop=4 softtabstop=4
 
+autocmd FileType yaml,yml setlocal expandtab shiftwidth=2 softtabstop=2 
 " JSON
 " ----
 autocmd FileType json setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
