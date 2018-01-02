@@ -196,7 +196,7 @@ nnoremap <silent> * :let stay_star_view = winsaveview()<cr>*:call winrestview(st
 " Syntax support  -------------------------------------------------------- {{{
 " python
 " ------
-autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=4 formatoptions=croqj softtabstop=4 comments=:#\:,:#
+autocmd FileType python setlocal expandtab shiftwidth=2 tabstop=2 formatoptions=croqj softtabstop=2 comments=:#\:,:#
 autocmd FileType python nnoremap <leader>y :0,$!yapf<Cr>
 autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 let python_highlight_all=1
@@ -251,7 +251,7 @@ autocmd BufLeave *.go             normal! mG
 
 " Javascript
 " ----------
-autocmd FileType javascript setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
+autocmd FileType javascript setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType javascript setlocal commentstring=//\ %s
 autocmd FileType javascript noremap <buffer> <leader>r :%!js-beautify --type js -j -q -B -f -<CR>
 autocmd FileType javascript let b:javascript_fold = 0
@@ -266,8 +266,10 @@ autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 
 " php
 " ---
-autocmd FileType php setlocal shiftwidth=4 tabstop=8 softtabstop=4 expandtab
-
+autocmd FileType php setlocal shiftwidth=2 tabstop=2 softtabstop=2 expandtab
+" lua
+" ---
+autocmd FileType lua setlocal shiftwidth=2 tabstop=2 softtabstop=2 expandtab
 " Template language (SGML / XML too)
 " ----------------------------------
 autocmd FileType xml,html,htmljinja,htmldjango setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
@@ -313,7 +315,7 @@ let c_no_curly_error=1
 
 " vim
 " ---
-autocmd FileType vim setlocal noexpandtab shiftwidth=4 tabstop=4 softtabstop=4
+autocmd FileType vim setlocal noexpandtab shiftwidth=2 tabstop=2 softtabstop=2
 
 autocmd FileType yaml,yml setlocal expandtab shiftwidth=2 softtabstop=2 
 " JSON
