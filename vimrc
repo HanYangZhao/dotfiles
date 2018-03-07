@@ -230,7 +230,7 @@ autocmd FileType go nmap <leader>t <Plug>(go-test)
 autocmd FileType go nmap <leader>d <Plug>(go-def)
 autocmd FileType go nmap <leader>de <Plug>(go-describe)
 autocmd FileType go nmap K <Plug>(go-doc)
-autocmd FileType go setlocal noexpandtab shiftwidth=4 tabstop=4 softtabstop=4
+autocmd FileType go setlocal noexpandtab shiftwidth=2 tabstop=2 softtabstop=2
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
@@ -264,7 +264,11 @@ autocmd BufLeave *.js             normal! mJ
 " ----
 autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 
+" ruby
+" ----
+autocmd FileType sh,bash setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 " php
+
 " ---
 autocmd FileType php setlocal shiftwidth=2 tabstop=2 softtabstop=2 expandtab
 " lua
@@ -285,7 +289,7 @@ autocmd BufLeave *.html             normal! mH
 
 " CSS
 " ---
-autocmd FileType css,scss setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
+autocmd FileType css,scss setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType css,scss setlocal commentstring=/*\ %s\ */
 autocmd FileType css,scss noremap <buffer> <leader>r :%!js-beautify --type css -j -q -B -f -<CR>
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
@@ -293,22 +297,22 @@ autocmd BufLeave *.css,*.less,*scss normal! mC
 
 " Java
 " ----
-autocmd FileType java setlocal shiftwidth=2 tabstop=8 softtabstop=2 expandtab
+autocmd FileType java setlocal shiftwidth=2 tabstop=2 softtabstop=2 expandtab
 autocmd FileType java setlocal commentstring=//\ %s
 
 " rst
 " ---
 autocmd BufNewFile,BufRead *.txt setlocal ft=rst
-autocmd FileType rst setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4 formatoptions+=nqt
+autocmd FileType rst setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2 formatoptions+=nqt
 " md
 " ---
-autocmd FileType md setlocal noexpandtab shiftwidth=4 tabstop=4 softtabstop=4
-autocmd FileType markdown setlocal noexpandtab shiftwidth=4 tabstop=4 softtabstop=4
+autocmd FileType md setlocal noexpandtab shiftwidth=2 tabstop=2 softtabstop=2
+autocmd FileType markdown setlocal noexpandtab shiftwidth=2 tabstop=2 softtabstop=2
 
 " C/Obj-C/C++
-autocmd FileType c setlocal tabstop=4 softtabstop=4 shiftwidth=4 expandtab
-autocmd FileType cpp setlocal tabstop=4 softtabstop=4 shiftwidth=4 expandtab
-autocmd FileType objc setlocal tabstop=4 softtabstop=4 shiftwidth=4 expandtab
+autocmd FileType c setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
+autocmd FileType cpp setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
+autocmd FileType objc setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 autocmd FileType c setlocal commentstring=/*\ %s\ */
 autocmd FileType cpp,objc setlocal commentstring=//\ %s
 let c_no_curly_error=1
@@ -320,7 +324,7 @@ autocmd FileType vim setlocal noexpandtab shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType yaml,yml setlocal expandtab shiftwidth=2 softtabstop=2 
 " JSON
 " ----
-autocmd FileType json setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
+autocmd FileType json setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType json noremap <buffer> <leader>r :%!js-beautify --type js -j -q -B -f -<CR>
 
 " ------------------------------------------------------------------------ }}}
