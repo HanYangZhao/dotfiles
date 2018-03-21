@@ -21,7 +21,7 @@ echo "**************************************************************************
 echo "***********************Install powerline...*******************************"
 echo "**************************************************************************"
 pip install powerline-status
-
+sudo apt-get install fonts-powerline
 
 echo "***** INSTALL DOCKER*******"
 curl -o docker.sh https://get.docker.com/
@@ -39,3 +39,9 @@ wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add
 echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
 sudo apt update && sudo apt install sublime-text
 
+echo "**************************************************************************"
+echo "************************Install Tilda***************************************"
+echo "**************************************************************************"
+sudo apt-get install -y tilda
+
+echo "****************************DONE******************************************"
