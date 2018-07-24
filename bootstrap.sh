@@ -54,6 +54,12 @@ echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sou
 sudo apt update && sudo apt install sublime-text
 
 echo "**************************************************************************"
+echo "************************Install Nodejs************************************"
+echo "**************************************************************************"
+curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
+echo "**************************************************************************"
 echo "************************Install Tilda***************************************"
 echo "**************************************************************************"
 sudo apt-get install -y tilda
