@@ -51,6 +51,8 @@ Plug 'Valloric/ListToggle'
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'scrooloose/nerdtree'
+
 " Plug 'ervandew/supertab'
 " Plug 'vim-scripts/ReplaceWithRegister'
 " Plug 'maksimr/vim-jsbeautify', {'for': ['javascript', 'css', 'html']} " Provide beatify for html, js, css
@@ -469,9 +471,13 @@ imap <expr><CR> pumvisible() ?
 \(neosnippet#expandable() ? "\<Plug>(neosnippet_expand)" : neocomplete#close_popup())
 \: "\<CR>"
 
-imap <expr><TAB> neosnippet#jumpable() ?
-\ "\<Plug>(neosnippet_jump)"
-\: pumvisible() ? "\<C-n>" : "\<TAB>"
-let g:neosnippet#snippets_directory='~/.vim/plugged/vim-go/gosnippets/snippets'
+" imap <expr><TAB> neosnippet#jumpable() ?
+" \ "\<Plug>(neosnippet_jump)"
+" \: pumvisible() ? "\<C-n>" : "\<TAB>"
+" let g:neosnippet#snippets_directory='~/.vim/plugged/vim-go/gosnippets/snippets'
+
+" nerdtree configuration
+map <C-n> :NERDTreeToggle<CR>
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " ------------------------------------------------------------------------ }}}
