@@ -9,7 +9,7 @@ apt-get install curl
 echo "**************************************************************************"
 echo "*********************Install tmux and vim*****************************"
 echo "**************************************************************************"
-apt-get install -y vim vim-nox tmux silversearcher-ag
+apt-get install -y vim vim-nox tmux silversearcher-ag htop
 
 echo "**************************************************************************"
 echo "**********************Install python tools stack...***********************"
