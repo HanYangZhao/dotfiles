@@ -20,7 +20,7 @@ sudo apt-get install -y build-essential python-dev python-setuptools python-pip 
 echo "**************************************************************************"
 echo "***********************Install powerline...*******************************"
 echo "**************************************************************************"
-pip install powerline-status
+pip3 install powerline-status
 sudo apt-get install -y fonts-powerline
 
 echo "***** INSTALL DOCKER*******"
